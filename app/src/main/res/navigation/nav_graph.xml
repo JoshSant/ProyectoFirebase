@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaFragment">
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_listaFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_editarFragment"
+            app:destination="@id/editarFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_insertFragment"
+            app:destination="@id/insertFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_consultFragment"
+            app:destination="@id/consultFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_insertCompradoresFragment"
+            app:destination="@id/insertCompradoresFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.EditarFragment"
+        android:label="fragment_editar"
+        tools:layout="@layout/fragment_editar" >
+        <action
+            android:id="@+id/action_editarFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.InsertFragment"
+        android:label="fragment_insert"
+        tools:layout="@layout/fragment_insert" >
+        <action
+            android:id="@+id/action_insertFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.ConsultFragment"
+        android:label="fragment_consult"
+        tools:layout="@layout/fragment_consult" >
+        <action
+            android:id="@+id/action_consultFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertCompradoresFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.InsertCompradoresFragment"
+        android:label="fragment_insert_compradores"
+        tools:layout="@layout/fragment_insert_compradores" >
+        <action
+            android:id="@+id/action_insertCompradoresFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.proyectofirebase.view.fragmentos.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+</navigation>
